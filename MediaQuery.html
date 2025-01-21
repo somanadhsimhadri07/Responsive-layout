@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+    <style>
+        /* Task-1 */
+        .Task-1{
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+        }
+        @media screen and (min-width : 768px) and (max-width :1024px){
+            .Task-1{
+                background-color: lightblue;
+            }
+        }
+        /* Task-2 */
+        .Task-2{
+            background-color: aqua;
+        }
+        @media screen and (min-width : 600px) and (max-width : 1200px) {
+            .Task-2{
+                font-size: 18px;
+            }    
+        }
+        /* Task-3 */
+        .Task-3{
+            width: 100%;
+            background-color:aquamarine ;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .Task-3 >.T3{
+            width: 200px;
+            height: 40px;
+            background-color: lightgreen;
+            border: 2px solid black;
+            text-align: center;
+        }
+        @media screen and (max-width : 500px) {
+            .Task-3{
+                width: 100%;
+                  display: flex;
+                  flex-direction: row;
+            } 
+        }
+        /* Task-4 */
+        .Task-4{
+            padding: 5px;
+            background-color: lightcoral;
+        }
+        .Task-4>.green{
+            background-color: lightcyan;
+        }
+        @media screen and (min-width : 500px) and (max-width : 800px) {
+            .Task-4 > .green{
+                background-color: green;
+            }
+            
+        }
+        /* Task-5 */
+        .Image-Container{
+            width: 100%;
+
+        }
+        .Lion-Image{
+            display: block;
+            width: 600px;
+            height: 400px;
+        }
+        @media screen and (max-width : 400px) {
+            .Image-Container > .Lion-Image{
+                display: none;
+            }
+        }
+        /* Task-6 */
+        .Task-6{
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: lightcoral;
+        }
+        @media screen and (min-width : 1024px) {
+            .Task-6{
+                padding: 20px;
+            }
+        }
+        /* Task-7 */
+        .Task-7{
+            padding: 8px;
+            background-color: lightgreen;
+        }
+        @media screen and (min-width : 600px) and (max-width : 1200px) {
+            .Task-7{
+                background-color: lightgray;
+            }
+            
+        }
+        /* Task-8 */
+        .Task-8{
+            box-sizing: border-box;
+            background-color: lightgoldenrodyellow;
+            padding: 5px;
+        }
+        .Task-8 > .Para0{
+            background-color: lightcoral;
+            padding: 3px;
+            font-size: 20px;
+        }
+        @media screen and (max-width : 480px) {
+            .Task-8 > .Para0{
+                font-size: 16px;
+            }
+            
+        }
+        /* Task-9 */
+        .Task-9{
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            background-color: aquamarine;
+        }
+        .grid1{
+            width: 200px;
+            text-align: center;
+            padding: 8px;
+            border: 2px solid black;
+            background-color: lightcoral;
+        }
+        @media screen and (max-width : 768px) {
+            .Task-9{
+                display: grid;
+            }     
+        }
+        /* Task-10 */
+        .Task-10{
+            width: 100%;
+        }
+        .Simba-Image{
+            width: 800px;
+        }
+        @media screen and (max-width : 600px) {
+            .Simba-Image{
+                width: 100%;
+            }
+            
+        }
+        /* Task-11 */
+        .Task-11{
+            height: 40px;
+            background-color: whitesmoke;
+        }
+        .Anchor0{
+            padding: 4px;
+            color: red;
+        }
+        @media screen and (min-width : 700px) and (max-width : 1200px) {
+            .Anchor0{
+                color: blue;
+            }
+        }
+        /* Task-12 */
+        .Task-12{
+            background-color: lightgreen;
+            padding: 5px;
+        }
+        .change-font{
+            font-size: 20px;
+        }
+        @media screen and (min-width : 500px) and (max-width : 800px) {
+            .change-font{
+                font-size: 24px;
+
+            }
+            
+        }
+        .Task-13{
+            box-sizing: border-box;
+            height: 50px;
+            padding: 15px;
+            
+            background-color: aqua;
+        }
+        @media screen and (min-width : 1024px) {
+            .Task-13{
+                border: 2px solid black;
+            }
+            
+        }
+        /* Task-14 */
+        .Sidebar{
+            padding: 10px;
+            background-color: lightcoral;
+        }
+        .Anchor1{
+            text-decoration: none;
+            padding: 2px;
+            border: 2px solid black;
+        }
+        @media screen and (min-width : 800px) and (max-width : 1200px) {
+            .Sidebar{
+                width: 250px;
+            }
+            
+        }
+        /* Task-15 */
+        .Task-15{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+        .last{
+            width: 50%;
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: lightpink;
+        }
+        @media screen and (min-width : 600px) {
+            .Task-15{
+                display: flex;
+                flex-direction: column;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>Task-1</h3>
+    <div class="Task-1">Task-1</div>
+    <hr>
+    <h3>Task-2</h3>
+    <p class="Task-2">This is the text in task-2</p>
+    <hr>
+    <h3>Task-3</h3>
+    <div class="Task-3">
+        <p class="T3">Do</p>
+        <p class="T3">Subscribe</p>
+        <p class="T3">My Channel</p>
+    </div>
+    <hr>
+    <h3>Task-4</h3>
+    <div class="Task-4">
+        <h1 class="green">This is pararaph-1</h1>
+        <h1 class="green">This is paragraph-2</h1>
+        <h1 class="green">This is Paragraph-3</h1>
+    </div>
+    <hr>
+    <h3>Task-5</h3>
+    <div class="Image-Container">
+        <img class="Lion-Image" src="https://th.bing.com/th/id/R.d62f7a3c28313606a651d639987f7439?rik=n6GypXm3aJnSiA&riu=http%3a%2f%2fstreamafrica.com%2fwp-content%2fuploads%2f2014%2f01%2fafrican-lion-wallpapers-hd.jpg&ehk=mUq%2bogVKZgC%2btsGrakhLON30INbGT3mQxJofJBpSi9k%3d&risl=&pid=ImgRaw&r=0" alt="Lion Image">
+    </div>
+    <hr>
+    <h3>Task-6</h3>
+    <div class="Task-6">
+        Hello World
+    </div>
+    <hr>
+    <h3>Task-7</h3>
+    <header class="Task-7">This is Header</header>
+    <hr>
+    <h3>Task-8</h3>
+    <div class="Task-8">
+        <p class="Para0">Paragraph-1</p>
+        <p class="Para0">Paragraph-2</p>
+        <p class="Para0">Paragraph-3</p>
+    </div><hr>
+    <!-- Task-9 -->
+     <h3>Task-9</h3>
+     <div class="Task-9">
+        <div class="grid1">Ok</div>
+        <div class="grid1">Mowa</div>
+     </div><hr>
+     <!-- Task-10 -->
+      <h3>Task-10</h3>
+      <div class="Task-10">
+        <img class="Simba-Image" src="https://th.bing.com/th/id/OIP.ygpj90FGTG8vOL663PaScgHaEK?w=2560&h=1440&rs=1&pid=ImgDetMain" alt="Simba Image">
+      </div><hr>
+      <!-- Task-11 -->
+       <h3>Task-11</h3>
+       <div class="Task-11">
+        <a class="Anchor0" href="">Link1</a>
+        <a class="Anchor0" href="">Link2</a>
+        <a class="Anchor0" href="">Link3</a>
+        <a class="Anchor0" href="">Link4</a>
+       </div><hr>
+       <!-- Task-12 -->
+        <h3>Task-12</h3>
+        <div class="Task-12">
+            <h2 class="change-font">Hi! This is Somanadh Simhadri</h2>
+            <h2 class="change-font">I love Cricket.</h2>
+            <h2 class="change-font">I'm a big fan of Hitmannn.</h2>   
+        </div><hr>
+        <!-- Task-13 -->
+         <h3>Task-13</h3>
+         <div class="Task-13">264</div>
+         <hr>
+         <!-- Task-14 -->
+          <div class="Sidebar">
+            <a class="Anchor1" href="">Home</a>
+            <a class="Anchor1" href="">News</a>
+            <a class="Anchor1" href="">Support</a>
+            <a class="Anchor1" href="">Contact</a>
+          </div><hr>
+          <!-- Task-15 -->
+           <h3>Task-15</h3>
+           <div class="Task-15">
+            <div class="last">Somanadh</div>
+            <div class="last">Simhadri</div>
+           </div>
+</body>
+</html>
